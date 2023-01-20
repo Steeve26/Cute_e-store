@@ -55,11 +55,19 @@
   width: 1.5em;
   height: 1.6em;
   color: #ff4747;
-  transition-duration: .3s
+  transition-duration: .3s;
+  font-size: 0.75em;
 }
 .del-item:hover {
   border-color: #333;
   color: #333;
+}
+.del {
+  transition-duration: .3s;
+  cursor: pointer;
+}
+.del:hover {
+  color: #333 !important;
 }
 @media only screen and (max-width: 430px) {
   .cart-info {

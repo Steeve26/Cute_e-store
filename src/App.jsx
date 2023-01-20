@@ -3,6 +3,8 @@ import { Products } from './data/products';
 import  ShopItem  from './components/shopItem';
 import  CartItem  from './components/cartItem';
 import ShoppingBag from './assets/shopping bag.png';
+import {BsHandbag} from 'react-icons/bs'
+import {FaTimes} from 'react-icons/fa'
 import './App.css'
 
 export default function App() {  
@@ -170,7 +172,8 @@ export default function App() {
             <button className='modal-btn clear-btn' onClick={() => clearCart()}>Clear Cart</button>
           }
 
-          <button className='exit' onClick={() => setModalVisible(false)}>X
+          <button className='exit' onClick={() => setModalVisible(false)}>
+            <FaTimes size={20}></FaTimes>
           </button>
         </div>
       </div>
@@ -179,17 +182,13 @@ export default function App() {
         {windowWidth} x {windowHeight}
       </span>
 
-      <div className='shopping-bag' onClick={() => setModalVisible(true)}>
+      <div className='shopping-bag'>
         <p>
           Cute St<strong>🥺</strong>
           <strong>re</strong>
         </p>
         {/*{resize.toFixed(5)}*/}
-        <img
-          style={{ cursor: 'pointer' }}
-          src={ShoppingBag}
-          alt='shopping bag'
-        />
+        <BsHandbag className='bag-icon' style={{cursor: 'pointer'}} color='black'  onClick={() => setModalVisible(true)}></BsHandbag>
         <span
           className='cart-count'
           style={{ display: cartCount ? 'flex' : 'none' }}

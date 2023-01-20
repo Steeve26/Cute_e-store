@@ -1,8 +1,10 @@
 import React from 'react'
 import './cartItem.css'
+import {GiCancel} from 'react-icons/gi'
+import {MdCancel} from 'react-icons/md'
+
 export default function cartItem(props) {
   const {id, name, price, quantity, emoji, decrease, add, remove} = props;
-
   const total = quantity * price
 
   return(
@@ -17,7 +19,8 @@ export default function cartItem(props) {
         </div>
       </span>
       
-      <button onClick={() => remove(id)} className='del-item'>x</button>
+      <MdCancel color={'#ff4747'} size={'1.5em'} onClick={() => remove(id)} className='del'></MdCancel>
+      {/* <button onClick={() => remove(id)} className='del-item'>x</button> */}
     </div>
   )
 }

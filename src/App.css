@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: .5em 0px;
-  font-size: 2em;
+  font-size: 1.75em;
   padding-inline: 1em;
 }
 .modal-container {
@@ -53,11 +53,14 @@ body {
   width: 2.5em;
   height: 2.5em;
   background: #e72a39;
-  color: white;
+  color: #eee;
   position: absolute;
   top: 0;
   right: 0;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .modal .exit:active {
   filter: brightness(2.6)
@@ -125,17 +128,25 @@ body {
 }
 .shopping-bag {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   position: relative;
-  margin-top: .8em;
+  margin-block: .8em;
 }
 .shopping-bag > p {
   position: relative;
+  margin: 0;
 }
 .shopping-bag > img {
   margin-top: .65em;
   width: 0.83em;
   height: 0.95em;
+}
+.bag-icon {
+  transition-duration: .3s;
+}
+.bag-icon:hover {
+  color: #70ca70;
 }
 .reso {
   position: absolute;
