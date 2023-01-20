@@ -58,7 +58,6 @@ body {
   top: 0;
   right: 0;
   border: none;
-  /* font-family: DM Sans; */
 }
 .modal .exit:active {
   filter: brightness(2.6)
@@ -128,6 +127,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: relative;
+  margin-top: .8em;
 }
 .shopping-bag > p {
   position: relative;
