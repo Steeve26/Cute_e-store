@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap'); 
+
+.cart-item {
+  width: calc(100% - 4em);
+  height: 2em;
+  background-color: white;
+  padding: 5px 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: #63636333 0px 2px 8px 0px;
+  border-radius: 10px;
+  margin-bottom: 1em;
+  font-family: DM Sans;
+  transition-duration: .3s;
+ }
+.cart-item:hover {
+  /* box-shadow: #32325d40 0px 6px 12px -2px, #0000004d 0px 3px 7px -3px; */
+  box-shadow: #00000029 0px 3px 6px, #0000003b 0px 3px 6px;
+}
+.cart-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(17em + 12px);
+}
+.qty-edit > span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 5px;
+  width: 1em;
+  user-select: none;
+}
+.qty-edit .btns {
+  cursor: pointer;
+  margin-block: 10px;
+  background-color: #eee;
+  border: 2px solid transparent;
+  transition-duration: .1s;
+}
+.qty-edit .btns:active {
+  font-size: .8em;
+  color: #70ca70;
+  border-color: #70ca70;
+}
+.del-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: 2px solid #ff4747;
+  border-radius: 3em;
+  padding-bottom: 5px;
+  width: 1.5em;
+  height: 1.6em;
+  color: #ff4747;
+  transition-duration: .3s
+}
+.del-item:hover {
+  border-color: #333;
+  color: #333;
+}
+@media only screen and (max-width: 430px) {
+  .cart-info {
+    width: calc(15.5em + 12px);
+  }
+  .qty-edit {
+    font-size: .8em;
+  }
+  .qty-edit span {
+    width: .8em;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .cart-item {
+    padding-inline: 1em;
+    width: calc(100% - 3em);
+  }
+}
