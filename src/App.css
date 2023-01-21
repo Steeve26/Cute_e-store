@@ -146,7 +146,7 @@ body {
   transition-duration: .3s;
 }
 .bag-icon:hover {
-  color: #70ca70;
+  color: #70ca70 !important;
 }
 .reso {
   position: absolute;

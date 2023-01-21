@@ -169,7 +169,7 @@ export default function App() {
           }
 
           { !!cartCount &&
-            <button className='modal-btn clear-btn' onClick={() => clearCart()}>Clear Cart</button>
+            <button className='modal-btn clear-btn' onClick={() => clearCart()}>Empty Cart</button>
           }
 
           <button className='exit' onClick={() => setModalVisible(false)}>

@@ -70,14 +70,14 @@ export const Products = [
     name: 'Doughnut',
     id: 9,
     quantity: 0,
-    price: 35,
+    price: 10,
     image: doughnut
   }, 
   {
     name: 'Strawberry',
     id: 10,
     quantity: 0,
-    price: 35,
+    price: 24,
     image: strawberry
   }, 
 ]
