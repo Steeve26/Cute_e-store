@@ -188,7 +188,7 @@ export default function App() {
           <strong>re</strong>
         </p>
         {/*{resize.toFixed(5)}*/}
-        <BsHandbag className='bag-icon' style={{cursor: 'pointer'}} color='black'  onClick={() => setModalVisible(true)}></BsHandbag>
+        <BsHandbag className='bag-icon' style={{cursor: 'pointer'}} color='black'  onClick={() => { window.scrollTo(0,0); setModalVisible(true)}}></BsHandbag>
         <span
           className='cart-count'
           style={{ display: cartCount ? 'flex' : 'none' }}

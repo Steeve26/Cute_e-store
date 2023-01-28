@@ -69,13 +69,17 @@ body {
   width: 100%;
   overflow-y: scroll;
   margin-bottom: 1.2em;
-  scrollbar-color: #333 transparent;
 }
 ::-webkit-scrollbar {
-    width: 10px
+  width: 10px;
+  margin-right: 2em;
 }
-::-webkit-scrollbar-track {
-  background: #cd1b1b;
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 3em;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 .modal .message {
   text-align: center;
@@ -122,7 +126,7 @@ body {
   margin-bottom: 2em;
 }
 .modal .clear-btn {
-  width: calc(100% - 1em);
+  width: calc(100% - 1.3em);
   margin-right: auto;
   font-size: 1em;
 }
